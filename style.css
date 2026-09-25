@@ -1,0 +1,86 @@
+/* 让注册表单在页面中居中显示 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background-color: #f0f3f7;
+    color: #333;
+}
+
+.register-box {
+    width: 400px;
+    max-width: 100%;
+    padding: 32px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #b6d7f5;
+    border-color: #327fc2;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #287bbb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #20669c;
+}
+
+button:focus-visible {
+    outline: 2px solid #20669c;
+    outline-offset: 3px;
+}
+
+#message {
+    min-height: 20px;
+    margin: 0 0 12px;
+    color: #c0392b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#message.success {
+    color: #287a43;
+}
